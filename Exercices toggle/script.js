@@ -17,3 +17,15 @@ toggleClasse.addEventListener("click",function(){                // créer une f
      monTitre.classList.toggle("chart");                         // toggle sur la classe chartreuse au clic
 })
 
+
+
+// ID :
+// Un id est unique dans une page HTML. Chaque élément qui a un id doit avoir une valeur d'id unique.
+// Un id est souvent utilisé pour identifier un seul élément spécifique dans le document.
+// On peut avoir un seul élément par id sur la page.
+
+
+// CLASS :
+// Une class peut être utilisée pour attribuer un ou plusieurs éléments avec la même valeur de class, donc plusieurs éléments peuvent partager la même class.
+// Une class est plus générique et peut être utilisée pour appliquer des styles ou des comportements à plusieurs éléments en même temps.
+// Un élément peut avoir plusieurs classes, séparées par des espaces.
