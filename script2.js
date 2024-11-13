@@ -1,15 +1,50 @@
-let lesTxt = document.getElementsByTagName("p");
-console.log(lesTxt);
+let monTitre = document.getElementById("mainTitle");
+let original = monTitre.textContent;
 
-let textesTab = Array.from(lesTxt);
+let ajouterClasse = document.getElementById("lien1");
+let etat = false;
 
-console.log(textesTab);
+ajouterClasse.addEventListener("click",function(){
 
-textesTab.map((paragraphe) =>{
-        paragraphe.innerText = "HAHAHAHAHAHAHA JE SUIS LE JOKER";
-        paragraphe.style = "color:red ; cursor:pointer";
-        paragraphe.addEventListener('click', () =>{
-            console.log("Hahahahahaha vous êtes le joker");
-        })
-    }
-)
+    monTitre.classList.add("chart");
+})
+
+let supprimerClasse = document.getElementById("lien2");
+
+supprimerClasse.addEventListener("click",function(){
+    monTitre.classList.remove("chart");
+
+})
+
+let toggleClasse = document.getElementById("lien3");
+
+toggleClasse.addEventListener("click",function(){
+     monTitre.classList.toggle("chart");  
+})
+
+
+/*
+
+Exercice d'avant
+if (etat) {
+    monTitre.innerText = original;
+} else {
+    monTitre.innerText = "serious";
+}
+etat = !etat;
+
+
+ let monTitre = document.querySelector("h1");
+let etat = true;
+console.log(monTitre)
+monTitre.addEventListener("click",function(){
+  console.log("ca marche")
+  if(etat){
+    monTitre.innerHTML = "PIPI";
+  }
+  else{
+    monTitre.innerHTML = "CACA";
+  }
+  etat = !etat;
+});   
+*/
