@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulaire en cours</title>
+</head>
+<body>    
+    <div class="container">
+        <form id="formulaire">  
+                <div class="form-item">
+                    <label for="email">Email</label>
+                    <input id="email" placeholder="Votre e-mail">
+                    <div class="error invisible">L'email n'est pas au bon format</div>
+                </div>
+                <div class="form-item">
+                    <label for="password">Password</label>
+                    <input type="text" id="password" placeholder="Votre mot de passe">
+                    <div class="error invisible">Le mot de passe n'est pas au bon format et doit :<br>
+                        -Contenir au moins 1 chiffre<br>
+                        -Contenir au moins 1 caractère spécial<br>
+                        -Faire plus de 8 caractères
+                    </div>
+                </div>
+                <div>
+                    <input type="checkbox" id="check" name="check"/>
+                    <label for="checkbox">Check me out</label>
+                    <button id="btn" type="submit">Envoyer</button>
+                </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
