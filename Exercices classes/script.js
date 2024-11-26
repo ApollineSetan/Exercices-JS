@@ -1,11 +1,10 @@
 console.log("Exercice1");
 
 class IMC {
-    constructor(unNom, unPoids, uneTaille, resultatIMC) {
+    constructor(unNom, unPoids, uneTaille) {
     this.unNom = unNom;
     this.unPoids = unPoids;
     this.uneTaille = uneTaille;
-    this.resultatIMC = this.calculIMC();
     }
 
 //Créer une classe IMC avec un constructeur qui recoit un nom, un poids, une taille et un résultat d'IMC (faisant référence à une fonction)
@@ -30,13 +29,13 @@ let list = [
     new IMC("Giselle", 52, 1.61),
 ];
 
-//En dehors de la classe, récupérer une variable liste (un tableau de nouvelle instances de la classe)
+//En dehors de la classe, récupérer une variable liste (un tableau de nouvelles instances de la classe)
 
 for (let i = 0 ; i < list.length ; i++){
     list[i].displayInfo();
 };
 
-//Trouver un moyen de parcour les éléments dans la variable list, sur chaque élément utiliser la fonction display.
+//Trouver un moyen de parcourir les éléments dans la variable list, sur chaque élément utiliser la fonction display.
 
 
 
